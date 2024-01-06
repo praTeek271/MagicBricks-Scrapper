@@ -52,18 +52,18 @@ def extract_values_from_html(soup):
             if 'super area' in label_text:
                 super_area = int(value_text.split(' ')[0])
             elif 'floor' in label_text:
-                floor_data = value_text.split(' out of ')
-                floor = floor_data[0].strip()
-                total_floors = int(floor_data[1].strip())
+                floor_data = value_text
+                # floor = floor_data[0].strip()
+                # total_floors = int(floor_data[1].strip())
             elif 'bathroom' in label_text:
                 bathrooms = int(value_text)
 
-    return super_area, floor, total_floors, bathrooms
+    return super_area, floor_data, bathrooms
 
 # Example usage
-super_area, floor, total_floors, bathrooms = extract_values_from_html(soup)
+super_area, floor,  bathrooms = extract_values_from_html(soup)
 
 print(f"Super Area: {super_area} sqft")
 print(f"Floor: {floor}")
-print(f"Total Floors: {total_floors}")
+# print(f"Total Floors: {total_floors}")
 print(f"No. of Bathrooms: {bathrooms}")
