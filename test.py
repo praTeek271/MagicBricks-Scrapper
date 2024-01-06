@@ -27,20 +27,7 @@
 from bs4 import BeautifulSoup
 
 html_content = """
-<div class="mb-srp__card__summary__list">
-    <div class="mb-srp__card__summary__list--item" data-summary="super-area">
-        <div class="mb-srp__card__summary--label">Super Area</div>
-        <div class="mb-srp__card__summary--value">340 sqft</div>
-    </div>
-    <div class="mb-srp__card__summary__list--item" data-summary="floor">
-        <div class="mb-srp__card__summary--label">Floor</div>
-        <div class="mb-srp__card__summary--value">Ground out of 3</div>
-    </div>
-    <div class="mb-srp__card__summary__list--item" data-summary="bathroom">
-        <div class="mb-srp__card__summary--label">Bathroom</div>
-        <div class="mb-srp__card__summary--value">1</div>
-    </div>
-</div>
+<div class="mb-srp__list" id="cardid69812357"><div class="mb-srp__card"><div class="mb-srp__card__container "><div class="mb-srp__card__photo"><div class="mb-srp__card__photo__fig"><div class="mb-srp__no-image"><div class="mb-srp__no-image__body"><span class="mb-srp__no-image--ico"></span><div class="mb-srp__no-image--text">No Image Available</div></div><div class="mb-srp__card__photo__fig--post">Posted:   Oct 30, '23 </div></div></div><div class="mb-srp__card__ads"><div class="mb-srp__card__ads--name">Owner: Meenakshi Iyer</div></div></div><div class="mb-srp__card__info mb-srp__card__info-withoutburger"><div class="mb-srp__card__tags"><span class="mb-srp__card__tags--tick  no-tick">Only on Magicbricks</span></div><h2 class="mb-srp__card--title" title="1 BHK Flat  for Sale in   Pune">1 BHK Flat  for Sale in   Pune</h2><span class="mb-srp__card__share--icon" data-ico="ico-share"></span><span class="mb-srp__card__sort--icon"></span><span></span><div class="mb-srp__card__summary " id="propertiesAction69812357"><div class="mb-srp__card__summary__list"><div class="mb-srp__card__summary__list--item" data-summary="super-area"><div class="mb-srp__card__summary--label">Super Area</div><div class="mb-srp__card__summary--value">208 sqft</div></div><div class="mb-srp__card__summary__list--item" data-summary="status"><div class="mb-srp__card__summary--label">Status</div><div class="mb-srp__card__summary--value">Ready to Move</div></div><div class="mb-srp__card__summary__list--item" data-summary="floor"><div class="mb-srp__card__summary--label">Floor</div><div class="mb-srp__card__summary--value">2 out of 3</div></div><div class="mb-srp__card__summary__list--item" data-summary="transaction"><div class="mb-srp__card__summary--label">Transaction</div><div class="mb-srp__card__summary--value">Resale</div></div><div class="mb-srp__card__summary__list--item" data-summary="bathroom"><div class="mb-srp__card__summary--label">Bathroom</div><div class="mb-srp__card__summary--value">1</div></div></div><div class="mb-srp__card__summary__action"></div></div><div class="mb-srp__card__usp-wrap has-offer"></div><div class="mb-srp__card--desc remove-truncated"><div class="mb-srp__card--desc--text"><p class="">1 BHK, Multistorey Apartment is available for Sale in , Pune for 8.0 Lac(s)</p><span class="mb-srp__card--desc--readmore">Read more</span></div></div></div></div><div class="mb-srp__card__estimate "><div class="mb-srp__card__price"><div class="mb-srp__card__price--amount"><span class="rupees">₹</span>8 Lac </div><div class="mb-srp__card__price--size"><span class="rupees">₹</span>3,846 per sqft </div></div><div class="mb-srp__action action--single mb-srp__card__action"><span class="mb-srp__action--btn medium btn-red">Contact Owner</span><span class="mb-srp__action--btn medium btn-white">Get Phone No.</span><div class="mb-srp__action--link mb-srp__action--link--nowrap">Get Home Loan</div></div></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"Apartment","@id":"https://www.magicbricks.com/propertyDetails/1-BHK-208-Sq-ft-Multistorey-Apartment-FOR-Sale-in-Pune&id=4d423639383132333537","url":"https://www.magicbricks.com/propertyDetails/1-BHK-208-Sq-ft-Multistorey-Apartment-FOR-Sale-in-Pune&id=4d423639383132333537","numberOfRooms":"1","name":"1 BHK Flat  for Sale in   Pune","potentialAction":{"@type":"BuyAction","seller":{"@type":"Person","name":"Meenakshi Iyer"}},"address":{"@type":"PostalAddress","addressRegion":"Pune","addressCountry":"IN"}}</script></div></div>
 """
 
 soup = BeautifulSoup(html_content, 'html.parser')
